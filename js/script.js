@@ -7,7 +7,6 @@ document.getElementById('btn-search').addEventListener('click', function () {
         .then(res => res.json())
         .then(data => getWeather(data));
     const getWeather = (data) => {
-        console.log(data);
         const areaName = data.name;
         const temp = data.main.temp;
         const weather = data.weather[0].main;
